@@ -1,0 +1,35 @@
+.bubble1 {
+	/* animation-name: bubble1;
+	animation-duration: 8s; */
+	animation: bubble1 7.5s infinite;
+	position: relative;
+	}
+	
+@keyframes bubble1 {
+	0% {
+	bottom: 0px;
+	right: 400px;
+	}
+	100% {
+	bottom: 2999px;
+	right: 400px;
+	}
+}
+
+.bubble2 {
+	/* animation-name: bubble2;
+	animation-duration: 7s; */
+	animation: bubble2 7s infinite;
+	position: relative;
+	}
+	
+@keyframes bubble2 {
+	0% {
+	bottom: 0px;
+	left: 400px;
+	}
+	100% {
+	bottom: 2999px;
+	left: 400px;
+	}
+}

@@ -1,0 +1,15 @@
+.blend {
+  animation-name: blend;
+  animation-duration: 2s;
+	}
+
+@keyframes blend {
+  0% {
+    background-image: "images/ocean_designing_grad-top.png";
+	opacity: 0;
+	}
+  100% {
+    background-image: "images/ocean_designing_grad-top.png";
+	opacity: 1;
+	}
+}

@@ -1,0 +1,10 @@
+.sepratr {
+	margin-left: 20px;
+	padding-left: 15px;
+	border-left: 3px #c3c3c3 solid;
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-left-color: rgb(195, 195, 195);
+	
+	text-align: left;
+}

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>.Silver's PasteJacking Demonstration</title> 
+<script>
+document.addEventListener('copy', function(e){
+                console.log(e);
+                e.clipboardData.setData('text/plain', 'The cake is a lie!');
+                e.preventDefault();
+            });
+			
+function ClipBoard()
+{
+holdtext.innerText = copytext.innerText;
+Copied = holdtext.createTextRange();
+Copied.execCommand("RemoveFormat");
+Copied.execCommand("Copy");
+}
+</script>
+<style>
+html {
+	background-color: #F1F1F1;
+}
+
+.img {
+	height: 500px; 
+	width: 500px;
+}
+
+input {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: text;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	outline: none;
+	width: 300px;
+	}
+	
+input:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	background-color: #3e8e41;
+	width: 300px;
+	/* font-weight: bold; */
+	cursor:url("images/text_cursor-v1.png"), text;
+	}
+	
+input:active {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	background-color: #3a6b3b;
+	width: 350px;
+	/* font-weight: bold; */
+	}
+	
+#noscript-warning {
+  font-family: arial-bold;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 101;
+  text-align: center;
+  font-weight: bold;
+  font-size: 100%;
+  color: #fff;
+  background-color: #8f1515; /* AE0000 */
+  padding: 5px 0px 5px 0px;
+  cursor: wait;
+}
+
+td {
+	border: 1px grey;
+	background-color: white;
+}
+	
+
+</style>
+</head>
+
+<body>
+<center>
+
+<!----NoScript---->
+<noscript>
+<div id="noscript-warning">
+<b>
+This test uses JavaScript. Enable it or <a style="color: white;" href="http://dotsilver.net/">leave the page</a>.
+</b>
+</div>
+</noscript>
+<!----NoScriptEnd---->
+
+<table><tr><td><center>
+
+<a href="http://dotsilver.net/lab/lab.html"><img src="images/lab-top-red.png" class="img"></a>
+<br>
+<br>
+<font style="font-family: tahoma; font-size: 32px">
+PasteJacking Demonstration</font>
+<br>
+
+
+<table><tr><td style="width: 330px;"><center>
+&nbsp;<br>
+
+<p>Copy the text below to your clipboard.</p><br>
+<span id="copytext">The cake is real!</span><br>
+
+<!----<TEXTAREA ID="holdtext" STYLE="display:none;">
+</TEXTAREA>
+<BUTTON onClick="ClipBoard();">Copy to Clipboard</BUTTON>--->
+
+<br><p style= " margin: 0px; " >And then paste it here:</p>
+<input type="text" placeholder="Paste!">
+<br>
+
+</center></td></tr></table>
+
+<!----Copyright---->
+
+<center>
+<hr>
+©Created by Dot_Silver
+</center>
+
+</center></td></tr></table>
+
+<!----CopyrightEnd---->
+
+</center></td></tr></table>
+
+</center>
+</body>
+
+</html>

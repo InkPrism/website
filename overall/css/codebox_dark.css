@@ -1,0 +1,34 @@
+body{margin: 0;}
+.prttyprnt{
+	font-family: Consolas, Menlo, Monaco, monospace;
+	color: #cccccc;
+	background: #222222;
+	-moz-border-radius: 0.25em;
+	-webkit-border-radius: 0.25em;
+	border-radius: 0.25em;
+	background-clip: padding-box;
+}
+.prebox{
+	padding: 12px;
+	margin: 0;
+	display: block;
+}
+.typ{
+	color: #6699cc;
+}
+.lit{
+	color: #f99157;
+}
+.kwd{
+	color: #cc99cc;
+}
+.com{
+	color: #999999;
+}
+.tab{
+	display:inline-block;
+	width: 25px;
+}
+.str{
+	color: #99cc99;
+}

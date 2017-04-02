@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>.Silver's Ocean Designing/ Gradients</title>
+<link rel="stylesheet" href="blend.css">
+<link rel="stylesheet" href="grads.css">
+<link rel="stylesheet" href="bubble.css">
+<link rel="stylesheet" href="hr.css">
+<link rel="stylesheet" href="http://old.dotsilver.net/sidenav.css">
+<script>
+function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+<style>
+html{
+	min-height: 100%;
+	background-color: rgb(77,150,249);
+	background-image: radial-gradient(#4D96F9, #0E54B3);
+	background-image: -webkit-radial-gradient(#4D96F9, #0E54B3);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	font-family: 'Roboto', sans-serif;
+	color: white;
+	-webkit-font-smoothing: antialiased;
+}
+
+.td {
+	border: 1px grey;
+	background-color: #F1F1F1;
+	width: 800px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	border-radius: 4px;
+}
+
+.tr:hover {
+	background-color: #f5f5f5
+	}
+	
+.ocbtn {
+	background-color: #3f7bcc;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	outline: none;
+	width: 300px;
+	}
+	
+.ocbtn:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	background-color: #3364a6;
+	width: 300px;
+	/* font-weight: bold; */
+	}
+	
+.ocbtn2 {
+	background-color: #3f7bcc;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s; /* Safari */
+	transition-duration: 0.4s;
+	outline: none;
+	width: 155px;
+	}
+
+.ocbtn2:hover {
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+	background-color: #3364a6;
+	width: 150px;
+	border-radius: 8px;
+	/* font-weight: bold; */
+	}
+	
+.ocfont {
+	font-weight: bold;
+	color: #4D96F9;
+	text-shadow: 0px 0px 8px #666666;
+	}
+
+.ocfont1 {
+	font-weight: bold;
+	color: white; /* Just to make sure */
+	text-shadow: 2px 2px 4px #000000;
+	text-align: left;
+	vertical-align: middle;
+	opacity: 0.6;
+	}
+	
+.ocfont2 {
+	font-weight: bold;
+	color: white; /* Just to make sure */
+	text-shadow: 2px 2px 4px #000000;
+	text-align: right;
+	vertical-align: middle;
+	opacity: 0.6;
+	}
+	
+.div {
+	display: inline-block;
+	white-space: nowrap;
+	border-radius: 4px;
+	}
+	
+.hr {
+	width: 440px;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+	border: 0; 
+	height: 1px;
+	}
+	
+.code {
+	width: 500px;
+	border: 1.5px #cccccc;
+	border-style: solid;
+	border-radius: 12px;
+	background-color: #F5F5F5;
+	text-align: left;
+	}
+	
+.code-text {
+	font-family: 'Consolas';
+	color: black;
+	font-weight: bold;
+	padding-left: 9px;
+	line-height: 0.7;
+	}
+	
+/*p {
+	color: black;
+	font-family: 'Terminal';
+	}*/
+	
+i:before {
+	content: url("images/download-symbol-v2.png");
+	}
+</style>
+</head>
+
+<body>
+
+<!----SideNav---->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="clsbtn" onclick="closeNav()">×</a>
+  <a href="http://old.dotsilver.net" class="b">Home</a>
+  <a href="http://old.dotsilver.net/mods/mods.html" class="b">Mods</a>
+  <a href="http://old.dotsilver.net/mods/useful_mini_mods/downloads/downloads.html" class="b" style=" font-size: 20px; ">&nbsp;&#x25e5;&nbsp;Useful Mini Mods</a>
+  <a href="http://old.dotsilver.net/mods/just4fun_mods/just4fun_mods.html" class="b" style="  font-size: 20px; ">&nbsp;&#x25e5;&nbsp;Just4Fun Mods</a>
+  <a href="http://old.dotsilver.net/lab/lab.html" class="b">Lab</a>
+  <a href="http://old.dotsilver.net/ocean_designing/ocean_designing.html" class="c b">Ocean Designing</a>
+  <a href="http://old.dotsilver.net/ocean_designing/gradients.html" class="b" style=" font-size: 20px; ">&nbsp;&#x25e5;&nbsp;Gradients</a>
+  <a href="http://old.dotsilver.net/ocean_designing/css.html" class="c b" style=" font-size: 20px; ">&nbsp;&#x25e5;&nbsp;CSS</a>
+  <a href="http://old.dotsilver.net/ocean_designing/images.html" class="b" style=" font-size: 20px; ">&nbsp;&#x25e5;&nbsp;Images</a>
+  <a href="http://old.dotsilver.net/transparent_pages/transparent_pages.html" class="b">Transparent pages</a>
+</div>
+<span style="color:white; font-size:30px; cursor:pointer; z-index: 102; margin: 10px;" onclick="openNav()">☰</span>
+<!----SideNavEnd---->
+
+<center>
+<br>
+<img class="blend" src="images/ocean_designing_css-top.png" />
+<br><br>
+
+<!----Table---->
+<table class="blend">
+<tr class="tr"><td class="blend td">
+<center>
+
+<a id="hr" href="lib/dotsilver-hr-styles.zip" class="ocbtn" style=" float: right; "><i>Download hr-Styles</i></a><br><br><br>
+
+<br>
+<font class="ocfont">Style One:</font>
+<hr class="style-one"><br>
+<font style=" color: white; text-shadow: 0px 0px 8px #666666; ">HTML:</font>
+<div class="code"><pre>
+<code class="code-text"> &lt;hr class="style-one"&gt;</code>
+</pre></div><br>
+<font style=" color: white; text-shadow: 0px 0px 8px #666666; ">CSS:</font>
+<div class="code"><pre>
+<h4 class="code-text">
+hr.style-one {<br>
+border: 0;<br>
+height: 1px;<br>
+background: #333;<br>
+background-image: -webkit-linear-gradient(left, #ccc, #333, #ccc);<br>
+background-image: -moz-linear-gradient(left, #ccc, #333, #ccc);<br>
+background-image: -ms-linear-gradient(left, #ccc, #333, #ccc);<br>
+background-image: -o-linear-gradient(left, #ccc, #333, #ccc);<br>
+}</h4>
+</pre></div>
+<hr class="hr">
+
+<br>
+<font class="ocfont">Style Two:</font>
+<hr class="style-two"><br>
+<font style=" color: white; text-shadow: 0px 0px 8px #666666; ">HTML:</font>
+<div class="code"><pre>
+<code class="code-text"> &lt;hr class="style-two"&gt;</code>
+</pre></div><br>
+<font style=" color: white; text-shadow: 0px 0px 8px #666666; ">CSS:</font>
+<div class="code"><pre>
+<h4 class="code-text">
+hr.style-two {<br>
+border: 0;<br>
+height: 0;<br>
+border-top: 1px solid rgba(0, 0, 0, 0.1);<br>
+border-bottom: 1px solid rgba(255, 255, 255, 0.3);<br>
+}</h4>
+</pre></div>
+<hr class="hr">
+
+<br>
+<font class="ocfont">Style Three:</font><br><br><br>
+<hr class="style-three"><br>
+<font style=" color: white; text-shadow: 0px 0px 8px #666666; ">HTML:</font>
+<div class="code"><pre>
+<code class="code-text"> &lt;hr class="style-three"&gt;</code>
+</pre></div><br>
+<font style=" color: white; text-shadow: 0px 0px 8px #666666; ">CSS:</font>
+<div class="code"><pre>
+<h4 class="code-text">
+hr.style-three {<br>
+height: 30px;<br>
+border-style: solid;<br>
+border-color: black;<br>
+border-width: 1px 0 0 0;<br>
+border-radius: 20px;<br>
+}<br>
+hr.style-three:before {<br>
+display: block;<br>
+content: "";<br>
+height: 30px;<br>
+margin-top: -31px;<br>
+border-style: solid;<br>
+border-color: black;<br>
+border-width: 0 0 1px 0;<br>
+border-radius: 20px;<br>
+}</h4>
+</pre></div>
+<hr class="hr">
+
+<br>
+<font class="ocfont">Style Four:</font><br><br><br>
+<hr class="style-four"><br>
+<font style=" color: white; text-shadow: 0px 0px 8px #666666; ">HTML:</font>
+<div class="code"><pre>
+<code class="code-text"> &lt;hr class="style-four"&gt;</code>
+</pre></div><br>
+<font style=" color: white; text-shadow: 0px 0px 8px #666666; ">CSS:</font>
+<div class="code"><pre>
+<h4 class="code-text">
+hr.style-four {<br>
+padding: 0;<br>
+border: none;<br>
+border-top: medium double #333;<br>
+color: #333;<br>
+text-align: center;<br>
+}<br>
+hr.style-four:after {<br>
+content: "www.old.dotsilver.net";<br>
+display: inline-block;<br>
+position: relative;<br>
+top: -0.7em;<br>
+font-size: 1.5em;<br>
+padding: 0 0.25em;<br>
+background: white;<br>
+}</h4>
+</pre></div>
+<hr class="hr">
+
+
+
+
+
+<a href="ocean_designing.html" class="ocbtn2">Back</a>
+
+</center>
+</td></tr>
+</table>
+<!----TableEnd---->
+
+<!----CopyrightTable---->
+<table class="blend">
+<tr class="tr">
+<td class="td" width="1006">
+<hr style="  border: 0; height: 1px; background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); "><center>
+<font style=" color: black; font-family: 'Times New Roman', sans-serif; ">
+©Created by Dot_Silver</font></center>
+</td>
+</tr>
+</table>
+<!----CopyrightTableEnd---->
+
+<div class="div bubble1"><img style=" height: 144px; width: 105px; " src="images/bubble1.png"></div>
+<div class="div bubble2"><img style=" height: 221px; width: 106px; " src="images/bubble2.png"></div>
+
+</body>
+</html>

@@ -1,0 +1,11 @@
+.topic_btn{
+	border: 0;
+	background-color: #22262C;
+	color: #8fe2c3;
+	text-decoration: none;
+	padding: 12px 20px 12px 20px;
+	margin: 5px 5px 5px 5px;
+}
+.topic_btn::after{
+	content: " →";
+}

@@ -1,0 +1,4 @@
+# This command is for all those people who read robots.txt's:
+# git clone git://life.com/life/life-4-nerds-and-people-who-are-2-curious
+User-agent: *
+Disallow: /
