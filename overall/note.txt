@@ -1,10 +1,9 @@
 body{margin:0;}
 
-<!----Nav---->
+<!--Nav-->
 <iframe src="http://dotsilver.net/overall/net_dotsilver_nav.html" style="border: 0; top: 0px; left: 0px;"></iframe>
-<!----NavEnd---->
+<!--NavEnd-->
 
-<!----Copyright---->
-<br>
+<!--Copyright-->
 <iframe src="http://dotsilver.net/overall/net_dotsilver_copy.html" style="border: 0; top: 0px; left: 0px;"></iframe>
-<!----CopyrightEnd---->
+<!--CopyrightEnd-->
