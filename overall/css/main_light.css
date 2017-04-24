@@ -72,6 +72,18 @@ img a{
 	
 	display: block;
 }
+.topic_btn{
+	border: 0;
+	background-color: #ddd9d3;
+	color: #701d3c;
+	text-decoration: none;
+	padding: 12px 20px 12px 20px;
+	margin: 5px 5px 5px 5px;
+	display: inline-block;
+}
+.topic_btn::after{
+	content: " →";
+}
 #header{
 	width: 100%;
 	border: 0;
