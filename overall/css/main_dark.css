@@ -158,12 +158,12 @@ img a{
 	width: 100%;
 }
 
-.box{
+.boxheader{
 	background-color: #22262c;
 	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
 	padding: 30px 40px 30px 40px;
 	display: block;
-    margin: 0 auto;
+    	margin: 0 auto;
 }
 .boxcenter{
 	animation-name: boxcenter_unroll;

@@ -147,7 +147,7 @@ img a{
 }
 #page{
 	display: block;
-    margin: 0 auto;
+	margin: 0 auto;
 	width: 100%;
 	/*margin-bottom: 10%;*/
 	
@@ -166,16 +166,16 @@ img a{
 	transition-duration: 0.4s;
 	
 	/*display: block;*/
-    margin: 0 auto;
+	margin: 0 auto;
 	width: 100%;
 }
 
-.box{
-	background-color: ##DDD9D3;
+.boxheader{
+	background-color: #DDD9D3;
 	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
 	padding: 30px 40px 30px 40px;
 	display: block;
-    margin: 0 auto;
+    	margin: 0 auto;
 }
 .boxcenter{
 	animation-name: boxcenter_unroll;
