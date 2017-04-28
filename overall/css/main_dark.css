@@ -164,6 +164,7 @@ img a{
 	margin: 0 auto; 
 	margin-bottom: 48px;
 	max-width: 960px;
+	padding: 0 20px;
 }
 .boxheader{
 	background-color: #22262c;
