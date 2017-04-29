@@ -9,12 +9,12 @@ body:focus{
 	filter: brightness(125%);
 }
 ::-moz-selection {
-    color: #ddd9d3;
-    background: #701d3c;
+	color: #ddd9d3;
+	background: #701d3c;
 }
 ::selection{
 	color: #ddd9d3;
-    background: #701d3c;
+	background: #701d3c;
 }
 a:link{
 	-webkit-transition: all .15s linear;
@@ -183,7 +183,7 @@ img a{
 	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
 	padding: 30px 40px 30px 40px;
 	display: block;
-    	margin: 0 auto;
+	margin: 0 auto;
 }
 .boxcenter{
 	animation-name: boxcenter_unroll;
@@ -192,7 +192,7 @@ img a{
 	background-color: #E4E1DC;
 	padding: 30px 40px 30px 40px;
 	display: block;
-    margin: 0 auto;
+	margin: 0 auto;
 	text-align: center;
 }
 .boxcenter div{

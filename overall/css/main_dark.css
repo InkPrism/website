@@ -9,12 +9,12 @@ body:focus{
 	filter: brightness(125%);
 }
 ::-moz-selection {
-    color: #22262C;
-    background: #8FE2C3;
+	color: #22262C;
+	background: #8FE2C3;
 }
 ::selection{
 	color: #22262C;
-    background: #8FE2C3;
+	background: #8FE2C3;
 }
 a:link{
 	-webkit-transition: all .15s linear;
@@ -156,7 +156,7 @@ img a{
 	transition-duration: 0.4s;
 	
 	/*display: block;*/
-    	margin: 0 auto;
+	margin: 0 auto;
 	width: 100%;
 }
 .box{
@@ -171,7 +171,7 @@ img a{
 	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
 	padding: 30px 40px 30px 40px;
 	display: block;
-    	margin: 0 auto;
+	margin: 0 auto;
 }
 .boxcenter{
 	animation-name: boxcenter_unroll;
@@ -180,7 +180,7 @@ img a{
 	background-color: #1B1E23;
 	padding: 30px 40px 30px 40px;
 	display: block;
-    margin: 0 auto;
+	margin: 0 auto;
 	text-align: center;
 }
 .boxcenter div{
@@ -221,4 +221,3 @@ img a{
 	visibility: visible;
 	}
 }
-
