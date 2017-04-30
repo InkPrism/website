@@ -197,6 +197,9 @@ img a{
 .topic_btn::after{
 	content: " →";
 }
+.redhghl{
+	color: #ff4242;
+}
 #main-img-link {
 	margin-top: 68px;
 	margin-left: 13px;
