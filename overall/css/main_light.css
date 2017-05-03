@@ -84,6 +84,9 @@ img a{
 .topic_btn::after{
 	content: " →";
 }
+.redhghl{
+	color: #ff4242;
+}
 #header{
 	width: 100%;
 	border: 0;
