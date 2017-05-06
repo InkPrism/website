@@ -225,3 +225,7 @@ img a{
 	visibility: visible;
 	}
 }
+/*--Specific: Lab*/
+#safe-img ,#danger-img{
+	width: 50%;
+}
