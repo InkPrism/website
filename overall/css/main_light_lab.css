@@ -1,12 +1,3 @@
-﻿table{
-	width: 100%;
-}
-td{
-	width: 50%;
-}
-td.head{
-	height: 50%;
-}
-#safe-img ,#danger-img{
+﻿#safe-img ,#danger-img{
 	width: 50%;
 }
