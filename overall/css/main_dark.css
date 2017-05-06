@@ -311,6 +311,18 @@ blockquote.answer{
 	border-left-color: rgb(195, 195, 195);
 	color: #808080;
 }
+a.hghl:hover{
+	display: block;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+strong.q:hover > a.perma{
+	visibility: visible;
+}
+a.perma{
+	visibility: hidden;
+}
 /*--Specific: About*/
 #logo{
 	max-width: 88px;
