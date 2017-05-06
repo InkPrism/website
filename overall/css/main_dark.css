@@ -311,3 +311,12 @@ blockquote.answer{
 	border-left-color: rgb(195, 195, 195);
 	color: #808080;
 }
+/*--Specific: About*/
+#logo{
+	max-width: 88px;
+	max-height: 84px;
+	min-width: 44px;
+	min-height: 42px;
+	width:10%;
+	height:10%;
+}
