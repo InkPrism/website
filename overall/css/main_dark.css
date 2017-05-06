@@ -30,6 +30,9 @@ a:link{
 a:hover{
 	filter: brightness(140%);
 }
+a.boxheader_float_right{
+	float: right;
+}
 p{
 	margin: 0;
 }
