@@ -183,6 +183,9 @@ img a{
 	margin: 0 auto;
 	text-align: center;
 }
+.boxcenter-text-left{
+	text-align: left;
+}
 .boxcenter div{
 	display: inline;
 }
@@ -205,6 +208,8 @@ img a{
 	margin-left: 13px;
 	margin-right: 20px;
 	margin-bottom: 48px;
+
+	display: inline-block;
 }
 @keyframes boxcenter_unroll {
 	0% {
