@@ -252,3 +252,18 @@ body.trpgbg{
 	background-image: url("http://dotsilver.net/overall/images/tr_bg-v2.png"); 
 	background-size: 200px;
 }
+div.trpg_link_box{
+	display: inline-block; 
+	margin-left: 12px;
+	margin-right: 12px;
+}
+a.trpg_link{
+	text-align: center;
+	display: block;
+}
+img.trpg_link_img{
+	width: 16px; 
+	height: 16px; 
+	margin-top: 5px; 
+	margin-right: 4px;
+}
