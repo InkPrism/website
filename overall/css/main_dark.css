@@ -321,6 +321,7 @@ strong.q:hover > a.perma{
 	visibility: visible;
 }
 a.perma{
+	margin-left: 4px;
 	visibility: hidden;
 }
 /*--Specific: About*/
