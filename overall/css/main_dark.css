@@ -267,3 +267,39 @@ img.trpg_link_img{
 	margin-top: 5px; 
 	margin-right: 4px;
 }
+/*--Specific: Frequently Asked Questions*/
+ul.question_list{
+	list-style: disc;
+	list-style-type: disc;
+	list-style-image: none;
+	list-style-position: outside;
+	margin-left: 0px;
+}
+li.question{
+	margin-left: 0px;
+	margin-bottom: 5px;
+	line-height: 1.7em;
+}
+li.question:target {
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	/*filter: invert(75%) saturate(30%);*/
+	border-width: 3px;
+	border-style: solid;
+	border-color: #c3c3c3;
+	padding: 8px;
+	box-shadow: 0px 0px 25px #c3c3c3;
+	margin-top: 18px;
+}
+li.question:target:hover {
+	filter: contrast(125%) brightness(105%);
+}
+blockquote.answer{
+	margin-left: 20px;
+	padding-left: 15px;
+	border-left: 3px #c3c3c3 solid;
+	border-left-width: 3px;
+	border-left-style: solid;
+	border-left-color: rgb(195, 195, 195);
+	color: #808080;
+}
