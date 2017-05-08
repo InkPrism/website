@@ -169,12 +169,15 @@ img a{
 	max-width: 960px;
 	padding: 0 20px;
 }
-.boxheader{
+.boxheader, .boxfooter{
 	background-color: #22262c;
 	box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.1);
 	padding: 30px 40px 30px 40px;
 	display: block;
 	margin: 0 auto;
+}
+.boxfooter_float_right{
+	float: right;
 }
 .boxcenter{
 	animation-name: boxcenter_unroll;
@@ -339,4 +342,27 @@ a.perma{
 	min-height: 42px;
 	width:10%;
 	height:10%;
+}
+input.pastebox {
+	background-color: #4CAF50; /* Green */
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: text;
+	-webkit-transition-duration: 0.2s; /* Safari */
+	transition-duration: 0.2s;
+	outline: none;
+	width: 50%;
+	max-width: 450px;
+}
+input.pastebox:hover {
+	filter: brightness(75%);
+}
+input.pastebox:active {
+	filter: brightness(50%);
 }
