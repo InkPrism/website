@@ -47,15 +47,6 @@ style="border: 0px none ; background: rgb(255, 255, 255) none repeat scroll 0% 0
 style="border: 0px none ; background: rgb(255, 255, 255) none repeat scroll 0% 0%; position: absolute; width: 8px; height: 8px; -moz-background-clip: border; 
 -moz-background-origin: padding; -moz-background-inline-policy: continuous;">
 </div>
-<script>
-function dsclickjack(evt) {
-mouseX=evt.pageX?evt.pageX:evt.clientX;
-mouseY=evt.pageY?evt.pageY:evt.clientY;
-document.getElementById('layer').style.left=mouseX-1;
-document.getElementById('layer').style.top=mouseY-1;
-console.log('YES');
-}
-</script>
 
 <center>
 <noscript>
@@ -78,6 +69,15 @@ Try it.</font>
 <br>
 <a onclick="dsclickjack(event)" href="https://www.google.co.ck"><font style="font-
 family: arial; font-size: 32px;">Don't click this link!</font></a><br>
+<script>
+function dsclickjack(evt) {
+mouseX=evt.pageX?evt.pageX:evt.clientX;
+mouseY=evt.pageY?evt.pageY:evt.clientY;
+document.getElementById('layer').style.left=mouseX-1;
+document.getElementById('layer').style.top=mouseY-1;
+console.log('YES');
+}
+</script>
 <br>
 <br>
 </center>
