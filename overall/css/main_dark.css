@@ -206,6 +206,10 @@ img a{
 .redhghl{
 	color: #ff4242;
 }
+.italic{
+	color: #ababab;
+	font-style: italic;
+}
 #main-img-link {
 	margin-top: 68px;
 	margin-left: 13px;
