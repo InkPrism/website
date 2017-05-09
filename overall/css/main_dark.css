@@ -75,6 +75,23 @@ img a{
 	
 	display: block;
 }
+textarea.txtbox{
+	font-family: 'Consolas', sans-serif;
+	background-color: #22262C;
+	height: 5em;
+	width:75%;
+	max-height: 350px;
+	max-width: 500px;
+	padding: 3px;
+	margin: 10px 8px 4px 8px;
+	border-left: 3px #c3c3c3 solid;
+	border-right: none;
+	border-bottom: none;
+	border-top: none;
+	color: #808080;
+	outline: none;
+	resize: none;
+}
 #header{
 	width: 100%;
 	border: 0;
