@@ -58,7 +58,7 @@ button{
 }
 button:hover{
 	filter: brightness(140%);
-	background-color: #1B1E23;
+	background-color: #E4E1DC;
 	
 	text-shadow: 0 0 0.5px #FFFFFF;
 }
