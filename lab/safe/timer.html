@@ -1,153 +1,72 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html><head>
-<title>Dot_Silver Timer Demonstration</title> 
-<meta charset="UTF-8" />
-<script>
-var clicked = false;
-var sec = 0;
-
-function startClock() {
-    if (clicked === false) {
-        clock = setInterval("stopWatch()", 1000);
-        clicked = true;
-    }
-    else if (clicked === true) {
-    }
-}
-
-function stopWatch() {
-    sec++;
-    document.getElementById("timer").innerHTML = sec;
-}
-
-
-function stopClock() {
-    window.clearInterval(clock);
-    sec = 0;
-    document.getElementById("timer").innerHTML=0;
-    clicked = false;
-}
-
-</script>
-<style>
-html {
-	background-color: #F1F1F1;
-}
-
-.img {
-	height: 500px; 
-	width: 500px;
-}
-
-input {
-	background-color: #4CAF50; /* Green */
-	border: none;
-	color: white;
-	padding: 15px 32px;
-	text-align: center;
-	text-decoration: none;
-	display: inline-block;
-	font-size: 16px;
-	margin: 4px 2px;
-	cursor: pointer;
-	-webkit-transition-duration: 0.4s; /* Safari */
-	transition-duration: 0.4s;
-	outline: none;
-	width: 300px;
-	}
+<meta name="author" content="Dot_Silver">
+<meta name="description" content="File-Hosting Website and JavaScript Demonstrations">
+<meta charset="utf-8" />
+<link id="theme" rel="stylesheet" href="http://dotsilver.net/overall/css/main_dark.css">
+<title>Dot_Silver Timer Demonstration</title>
+<style type="text/css">
 	
-input:hover {
-	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-	background-color: #3e8e41;
-	width: 300px;
-	/* font-weight: bold; */
-	}
-	
-input:active {
-	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-	background-color: #3a6b3b;
-	width: 300px;
-	/* font-weight: bold; */
-	}
-	
-#noscript-warning {
-  font-family: arial-bold;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 101;
-  text-align: center;
-  font-weight: bold;
-  font-size: 100%;
-  color: #fff;
-  background-color: #8f1515; /* AE0000 */
-  padding: 5px 0px 5px 0px;
-  cursor: wait;
-}
-
-td {
-	border: 1px grey;
-	background-color: white;
-}
-	
-
 </style>
 </head>
 <body>
-<center>
-
-<br><br><br>
-
-<!----NoScript---->
-<noscript>
-<div id="noscript-warning">
-<b>
-This test uses JavaScript. Enable it or <a style="color: white;" href="http://dotsilver.net/">leave the page</a>.
-</b>
-</div>
-</noscript>
-<!----NoScriptEnd---->
-
-<table><tr><td><center>
-
-<a href="http://dotsilver.net/lab/"><img src="http://dotsilver.net/overall/images/lab-top-blue.png" class="img"></a>
-<br>
-<br>
-<font style="font-family: tahoma; font-size: 32px">
-Timer Demonstration</font>
-<br>
-
-
-<table><tr><td style="width: 330px;"><center>
-&nbsp;<br>
-<!----StartTimer---->
-<input type="submit" id="start-clock" value="Click here to start timer" name="submit" onClick="startClock()"/>
-<!----StartTimerEnd---->
-
-<!----Timer---->
-<div id="timer" style="font-weight: bold;">0</div>
-<!----TimerEnd---->
-
-<!----StopResetTimer---->
-<input type="submit" id="stop-clock" value="Click here to stop and reset the timer" name="submit" onClick="stopClock()"/>
-<!----StopResetTimerEnd---->
-<br>&nbsp;
-</center></td></tr></table>
-
-<!----Copyright---->
-
-<center>
-<hr>
-©Created by Dot_Silver
-</center>
-
-</center></td></tr></table>
-
-<!----CopyrightEnd---->
-
-</center></td></tr></table>
-
-</center>
+	<div id="page">
+		<div id="title">
+			<div id="titlebox">
+				<a href="http://dotsilver.net" id="main-img-link">
+					<img id="main-img" src="http://dotsilver.net/overall/main-img0.svg" alt="Dot_Silver" />
+				</a>
+			</div>
+		</div>
+		<div id="content">
+			<!--Box1-->
+			<div id="box1" class="box">
+				<div class="boxheader">
+					<p>Timer Demonstration<a href="http://dotsilver.net/lab/" class="boxheader_float_right">[Back]</a></p>
+				</div>
+				<div class="boxcenter">
+					<div>
+						<p><button id="start">Start</button></p>
+						<p id="timer">0</p>
+						<p><button id="stop">Stop</button><button id="reset">Reset</button></p>
+						<p><input type="text" id="interval" placeholder="Interval [default:1000]" class="pastebox"></p>
+						<p><input type="checkbox" id="boolstopreset"> Stop &amp; Reset</p>
+					</div>
+					<script type="application/javascript">
+						document.getElementById('start').addEventListener('click', startClock);
+						document.getElementById('stop').addEventListener('click', stopBtn);
+						document.getElementById('reset').addEventListener('click', resetBtn);
+						var clicked = false;
+						var sec = 0;
+						function startClock() {
+							var interval = document.getElementById('interval').value;
+							if (interval == ""){interval = 1000;}
+							if (clicked === false) {
+								clock = setInterval("stopWatch()", interval);
+								clicked = true;
+							} else if (clicked === true) {}
+						}
+						function stopWatch() {
+    							sec++;
+    							document.getElementById("timer").innerHTML = sec;
+						}
+						function stopBtn() {
+							window.clearInterval(clock);
+							if(document.getElementById('boolstopreset').checked){resetBtn();}
+							clicked = false;
+						}
+						function resetBtn() {
+							sec = 0;
+							document.getElementById("timer").innerHTML=0;
+						}
+					</script>
+				</div>
+				<div class="boxfooter"></div>
+			</div>
+			<!--Box1End-->
+		</div>
+	</div>
+	<!--Copyright-->
+	<iframe id="footer" src="http://dotsilver.net/overall/net_dotsilver_copy.html"></iframe>
+	<!--CopyrightEnd-->
 </body>
-</html>
