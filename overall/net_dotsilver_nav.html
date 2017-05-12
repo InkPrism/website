@@ -12,16 +12,13 @@
 	.navbody {
 		display: block;
 		font-family: 'Courier New', sans-serif;
-		/* height: 53px; */
 		background: #1c1c1c;
 		text-align: center;
 		top: 0px;
 		left: 0px;
-		width: 100%;
 		text-align: center;
 		font-weight: bold;
 		font-size: 100%;
-		/* padding: 5px 0px 5px 0px; */
 		padding: 0px 0px 0px 0px;
 		color: #cecece;
 		list-style-type: none;
@@ -49,9 +46,7 @@
 		padding: 4px 0px 4px 10px; 
 		background: #292929; 
 	}
-	.nav_dir{
-		background-color: #6f220c;
-	}
+	/*.nav_dir{background-color: #6f220c;}*/
 	.nav_btn{
 		-webkit-transition-duration: 0.2s; /* Safari */
 		transition-duration: 0.2s;
@@ -74,31 +69,34 @@
 	.floatrght{
 		float: right;
 	}
+	.floatlft{
+		float: left;
+	}
 </style>
 </head>
 <body>
 	<ul class="navbody">
 	<!--I know, i know... NO <a> as a child of <ul>...-->
-		<a href="http://dotsilver.net">
+		<a href="http://dotsilver.net" class="floatlft">
 			<li class="nav_nobtn nav_nobtn1"><img src="images/dotsilver-v8.1.svg" alt="Dot_Silver"></li>
 			<li class="nav_nobtn nav_nobtn0">Dot_Silver</li>
 		</a>
-		<a href="http://dotsilver.net">
+		<a href="http://dotsilver.net" class="floatlft">
 			<li class="nav_btn" >Home</li>
 		</a>
-		<a href="http://dotsilver.net/mods/">
+		<a href="http://dotsilver.net/mods/" class="floatlft">
 			<li class="nav_btn" >Mods</li>
 		</a>
-		<a href="http://dotsilver.net/faq/">
+		<a href="http://dotsilver.net/faq/" class="floatlft">
 			<li class="nav_btn" >FAQ</li>
 		</a>
-		<a href="http://dotsilver.net/1337/">
+		<a href="http://dotsilver.net/1337/" class="floatlft">
 			<li class="nav_btn" >1337</li>
 		</a>
-		<a href="http://dotsilver.net/lab/">
+		<a href="http://dotsilver.net/lab/" class="floatlft">
 			<li class="nav_btn" >Lab</li>
 		</a>
-		<a href="http://dotsilver.net/transparent_pages/">
+		<a href="http://dotsilver.net/transparent_pages/" class="floatlft">
 			<li class="nav_btn" >Transparent Pages</li>
 		</a>
 	
