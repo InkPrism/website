@@ -37,9 +37,6 @@ p{
 	margin: 0;
 }
 button{
-	animation-name: button_unroll;
-	animation-duration: 2s;
-	
 	border: 0;
 	background-color: #22262C;
 	color: #8fe2c3;
@@ -245,14 +242,6 @@ textarea.txtbox{
 	}
 	100% {
 	padding: 30px 40px 30px 40px;
-	visibility: visible;
-	}
-}
-@keyframes button_unroll {
-	0% {
-	visibility: hidden;
-	}
-	100% {
 	visibility: visible;
 	}
 }
