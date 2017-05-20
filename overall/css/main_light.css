@@ -215,7 +215,121 @@ img a{
 	visibility: visible;
 	}
 }
+/*--Specific: Ocean Designing*/
+body.ocbg{
+	min-height: 100%;
+	background-color: rgb(77,150,249);
+	background-image: radial-gradient(#4D96F9, #0E54B3);
+	background-image: -webkit-radial-gradient(#4D96F9, #0E54B3);
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+/*--Specific: 1337*/
+.sepratr {
+	margin-left: 20px;
+	padding-left: 15px;
+	border-left: 3px #3C3C3C solid;
+	text-align: left;
+}
+/*--Specific: Transparent Pages*/
+.boxshadow{
+	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+body.trpgbg{
+	background-image: url("http://dotsilver.net/overall/images/tr_bg-v2.png");
+	background-size: 200px;
+}
+div.trpg_link_box{
+	margin: 0 12px 0 12px;
+	display: inline-block; 
+}
+a.trpg_link{
+	text-align: center;
+	display: block;
+}
+img.trpg_link_img{
+	width: 16px; 
+	height: 16px; 
+	margin-top: 5px; 
+	margin-right: 4px;
+}
+/*--Specific: Frequently Asked Questions*/
+ul.question_list{
+	list-style: disc;
+	list-style-type: disc;
+	list-style-image: none;
+	list-style-position: outside;
+	margin-left: 0px;
+}
+li.question{
+	margin-left: 0px;
+	margin-bottom: 5px;
+	line-height: 1.7em;
+}
+li.question:target {
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+	/*filter: invert(75%) saturate(30%);*/
+	border: 3px #ff4242 solid;
+	padding: 8px;
+	box-shadow: 0px 0px 25px #ff4242;
+	margin-top: 18px;
+}
+li.question:target:hover {
+	filter: contrast(125%) brightness(105%);
+}
+blockquote.answer{
+	margin-left: 20px;
+	padding-left: 15px;
+	border-left: 3px #3C3C3C solid;
+	color: #7F7F7F;
+}
+a.hghl:hover{
+	display: block;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s;
+	transition-duration: 0.4s;
+}
+strong.q{
+	display: block;
+}
+strong.q:hover > a.perma{
+	visibility: visible;
+}
+a.perma{
+	margin-left: 4px;
+	visibility: hidden;
+}
+/*--Specific: About*/
+#logo{
+	max-width: 88px;
+	max-height: 84px;
+	min-width: 44px;
+	min-height: 42px;
+	width:10%;
+	height:10%;
+}
 /*--Specific: Lab*/
-#safe-img ,#danger-img{
+input.pastebox {
+	background-color: #DDD9D3;
+	border: none;
+	color: white;
+	padding: 15px 32px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: text;
+	-webkit-transition-duration: 0.2s; /* Safari */
+	transition-duration: 0.2s;
+	outline: none;
 	width: 50%;
+	max-width: 450px;
+}
+input.pastebox:hover {
+	filter: brightness(75%);
+}
+input.pastebox:active {
+	filter: brightness(50%);
 }
