@@ -160,13 +160,11 @@ textarea.txtbox{
 	/*margin-bottom: 10%;*/
 	
 }
-#title{
-	clear: both;
-	text-align: center;
-}
 #titlebox{
 	margin: 0 auto;
 	margin-bottom: 48px;
+	clear: both;
+	text-align: center;
 }
 #main-img{
 	-webkit-transition-duration: 0.4s;
