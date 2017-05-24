@@ -88,6 +88,23 @@ img a{
 	color: #ababab;
 	font-style: italic;
 }
+textarea.txtbox{
+	font-family: 'Consolas', sans-serif;
+	background-color: #DDD9D3;
+	height: 5em;
+	width:75%;
+	max-height: 350px;
+	max-width: 500px;
+	padding: 3px;
+	margin: 10px 8px 4px 8px;
+	border-left: 3px #3c3c3c solid;
+	border-right: none;
+	border-bottom: none;
+	border-top: none;
+	color: #7F7F7F;
+	outline: none;
+	resize: none;
+}
 #header{
 	width: 100%;
 	border: 0;
