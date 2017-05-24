@@ -84,6 +84,10 @@ img a{
 .redhghl{
 	color: #ff4242;
 }
+.italic{
+	color: #ababab;
+	font-style: italic;
+}
 #header{
 	width: 100%;
 	border: 0;
