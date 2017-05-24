@@ -8,11 +8,7 @@
 body:focus{
 	filter: brightness(125%);
 }
-::-moz-selection {
-	color: #22262C;
-	background: #8FE2C3;
-}
-::selection{
+::selection, ::-moz-selection {
 	color: #22262C;
 	background: #8FE2C3;
 }
