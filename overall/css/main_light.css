@@ -209,6 +209,19 @@ img a{
 	margin-right: 20px;
 	margin-bottom: 48px;
 }
+.codebox{
+	background-color: #DDD9D3;
+	border: 0;
+	border-left: 3px #3c3c3c solid;
+	margin: 1em 20px 1em 20px;
+	padding: 6px 15px 6px 15px;
+	text-align: left;
+	color: #7F7F7F;
+	min-height: 45px;
+}
+legend.fname{
+	color: #3C3C3C;
+}
 @keyframes boxcenter_unroll {
 	0% {
 	padding: 0px 40px 0px 40px;
