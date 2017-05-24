@@ -193,6 +193,9 @@ img a{
 	margin: 0 auto;
 	text-align: center;
 }
+.boxcenter-text-left{
+	text-align: left;
+}
 .boxcenter div{
 	display: inline;
 }
