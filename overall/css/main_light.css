@@ -42,7 +42,6 @@ button{
 	-o-transition: all .15s linear;
 	-ms-transition: all .15s linear;
 	transition: all .15s linear;
-	/*font-weight: 1150;*/
 	font-weight: normal;
 	font-size: 18px;
 	padding: 10px 15px 10px 15px;
