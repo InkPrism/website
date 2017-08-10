@@ -221,6 +221,12 @@ textarea.txtbox{
 	margin-right: 20px;
 	margin-bottom: 48px;
 }
+li.list-mid-item {
+	list-style-type: '├─ ';
+}
+li.list-last-item {
+	list-style-type: '└─ ' ;
+}
 .codebox{
 	background-color: #DDD9D3;
 	border: 0;
