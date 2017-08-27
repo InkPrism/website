@@ -1,7 +1,0 @@
-<!--Nav-->
-<iframe id="header" src="http://dotsilver.net/overall/net_dotsilver_nav.html"></iframe>
-<!--NavEnd-->
-
-<!--Copyright-->
-<iframe id="footer" src="http://dotsilver.net/overall/net_dotsilver_copy.html"></iframe>
-<!--CopyrightEnd-->
