@@ -25,23 +25,6 @@
 		white-space: nowrap;
 		margin: 0px;
 	}
-	.nav_nobtn{
-		-webkit-transition-duration: 0.2s; /* Safari */
-		transition-duration: 0.2s;
-		padding: 6px 12px 10px 12px;
-		color: #cecece;
-		white-space: nowrap;
-		display: block;
-		float: left;
-	}
-	.nav_nobtn0{
-		padding: 20px 10px 20px 12px; 
-		background: #292929; 
-	}
-	.nav_nobtn1{
-		padding: 4px 0px 4px 10px; 
-		background: #292929; 
-	}
 	/*.nav_dir{background-color: #6f220c;}*/
 	.nav_btn{
 		-webkit-transition-duration: 0.2s; /* Safari */
@@ -56,14 +39,43 @@
 		background-color: #333333;
 		color: #bebebe;
 	}
-	.nav_btn:active{
-		color: #808080;
+	.nav_btn:active{ color: #808080; }
+	.nav_nobtn{ padding: 6px 12px 10px 12px; }
+	.nav_nobtn:hover{
+		background: #292929;
+		color: #cecece;
 	}
-	.floatrght{
-		float: right;
+	.nav_nobtn:active{ color: #cecece; }
+	.nav_nobtn0{
+		padding: 20px 10px 20px 12px; 
+		background: #292929; 
 	}
-	.floatlft{
-		float: left;
+	.nav_nobtn1{
+		padding: 4px 0px 4px 10px; 
+		background: #292929; 
+	}
+	.homebtn{}
+	.floatrght{ float: right; }
+	.floatlft{ float: left; }
+	@media only screen and (max-width: 954px){
+		.nav_btn{
+			/*font-size: smaller;*/
+			font-size: 90%;
+		}
+	}
+	@media only screen and (max-width: 856px){
+		.nav_nobtn0{
+			visibility: hidden;
+			padding: 0;
+			width: 0;
+		}
+		.nav_nobtn1{ padding-right: 10px; }
+		.nav_nobtn1:hover{ background: #1c1c1c; }
+		.homebtn{
+			visibility: hidden;
+			padding: 0;
+			width: 0;
+		}
 	}
 </style>
 </head>
@@ -71,11 +83,11 @@
 	<ul class="navbody">
 	<!--I know, i know... NO <a> as a child of <ul>...-->
 		<a href="../" class="floatlft">
-			<li class="nav_nobtn nav_nobtn1"><img src="images/dotsilver-v8.1.svg" alt="Dot_Silver"></li>
-			<li class="nav_nobtn nav_nobtn0">Dot_Silver</li>
+			<li class="nav_nobtn1 nav_nobtn nav_btn"><img src="images/dotsilver-v8.1.svg" alt="Dot_Silver"></li>
+			<li class="nav_btn nav_nobtn nav_nobtn0">Dot_Silver</li>
 		</a>
 		<a href="../" class="floatlft">
-			<li class="nav_btn" >Home</li>
+			<li class="nav_btn homebtn" >Home</li>
 		</a>
 		<a href="../projects/" class="floatlft">
 			<li class="nav_btn" >Projects</li>
