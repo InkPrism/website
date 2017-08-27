@@ -55,14 +55,10 @@
 		background: #292929; 
 	}
 	.homebtn{}
+	.contactbtn{}
 	.floatrght{ float: right; }
 	.floatlft{ float: left; }
-	@media only screen and (max-width: 954px){
-		.nav_btn{
-			/*font-size: smaller;*/
-			font-size: 90%;
-		}
-	}
+	@media only screen and (max-width: 954px){.nav_btn{ font-size: 90%; }}
 	@media only screen and (max-width: 856px){
 		.nav_nobtn0{
 			visibility: hidden;
@@ -72,6 +68,14 @@
 		.nav_nobtn1{ padding-right: 10px; }
 		.nav_nobtn1:hover{ background: #1c1c1c; }
 		.homebtn{
+			visibility: hidden;
+			padding: 0;
+			width: 0;
+		}
+	}
+	@media only screen and (max-width: 696px){.nav_btn{ font-size: 75%; }}
+	@media only screen and (max-width: 648px){
+		.contactbtn{
 			visibility: hidden;
 			padding: 0;
 			width: 0;
@@ -109,7 +113,7 @@
 			<li class="nav_btn">About</li>
 		</a>
 		<a href="mailto:contact@dotsilver.net?subject=The%20subject%20of%20the%20mail&amp;body=This%20is%20a%20message%20body" class="floatrght">
-			<li class="nav_btn">Contact</li>
+			<li class="nav_btn contactbtn">Contact</li>
 		</a>
 	
 	</ul>
