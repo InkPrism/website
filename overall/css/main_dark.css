@@ -235,6 +235,9 @@ li.list-mid-item {
 li.list-last-item {
 	list-style-type: '└─ ' ;
 }
+li.no-bullet {
+	list-style-type: none;
+}
 .codebox{
 	background-color: #22262C;
 	border: 0;
