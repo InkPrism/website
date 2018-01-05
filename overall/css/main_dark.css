@@ -10,11 +10,11 @@ body:focus{
 }
 ::selection {
 	color: #22262C;
-	background: #8FE2C3;
+	background: #8FE2C3; /* #4696e6 */
 }
 ::-moz-selection {
 	color: #22262C;
-	background: #8FE2C3;
+	background: #8FE2C3; /* #4696e6*/
 }
 a:link{
 	-webkit-transition: all .15s linear;
@@ -22,7 +22,7 @@ a:link{
 	-o-transition: all .15s linear;
 	-ms-transition: all .15s linear;
 	transition: all .15s linear;
-	color: #8fe2c3;
+	color: #8fe2c3; /* #4696e6 */
 	text-decoration: none;
 	white-space: nowrap;
 	display: inline-block;
@@ -39,7 +39,7 @@ p{
 button{
 	border: 0;
 	background-color: #22262C;
-	color: #8fe2c3;
+	color: #8fe2c3; /* #4696e6*/
 	text-decoration: none;
 	-webkit-transition: all .15s linear;
 	-moz-transition: all .15s linear;
@@ -206,7 +206,7 @@ textarea.txtbox{
 .topic_btn{
 	border: 0;
 	background-color: #22262C;
-	color: #8fe2c3;
+	color: #8fe2c3; /* #4696e6 */
 	text-decoration: none;
 	padding: 12px 20px 12px 20px;
 	margin: 5px 5px 5px 5px;
