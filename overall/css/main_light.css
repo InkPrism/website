@@ -278,7 +278,7 @@ body.ocbg{
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 body.trpgbg{
-	background-image: url("http://dotsilver.net/overall/images/tr_bg-v3.png");
+	background-image: url("../../overall/images/tr_bg-v3.png");
 	background-size: 200px;
 }
 div.trpg_link_box{
