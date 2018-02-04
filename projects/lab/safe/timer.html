@@ -31,11 +31,13 @@
 						<p><input type="checkbox" id="boolstopreset"> Stop &amp; Reset</p>
 					</div>
 					<script type="application/javascript">
+						var clicked = false;
+						var sec = 0;
+						var stopreset = document.getElementById('boolstopreset');
+						var resetbtn = document.getElementById('reset');
 						document.getElementById('start').addEventListener('click', startClock);
 						document.getElementById('stop').addEventListener('click', stopBtn);
 						document.getElementById('reset').addEventListener('click', resetBtn);
-						var clicked = false;
-						var sec = 0;
 						function startClock() {
 							var interval = document.getElementById('interval').value;
 							if (interval == ""){interval = 1000;}
@@ -57,6 +59,10 @@
 							sec = 0;
 							document.getElementById("timer").innerHTML= 0;
 						}
+						stopreset.addEventListener('click', function onclick(){
+							if(stopreset.checked){ resetbtn.style.display = "none" }
+							else{ resetbtn.style.display = "inline-block" }
+						})
 					</script>
 				</div>
 				<div class="boxfooter"></div>
