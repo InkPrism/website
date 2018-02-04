@@ -32,17 +32,12 @@
 						<p id="demo" class="pastebox">42</p>
 					</div>
 					<script type="application/javascript">
-						document.getElementById("btn").addEventListener('click', _rand)
-						function _rand() {
+						document.getElementById("btn").addEventListener('click', function _rand() {
 							var x = (Math.random() * document.getElementById('max').value);
-							if(document.getElementById('boolfloor').checked) {
-								x = Math.floor(x);
-							}
-							if(document.getElementById('boolzero').checked) {
-								x = x + 1;
-							}
+							if(document.getElementById('boolfloor').checked) { x = Math.floor(x); }
+							if(document.getElementById('boolzero').checked) { x = x + 1; }
    		 					document.getElementById("demo").innerHTML = x;
-						}
+						})
 					</script>
 				</div>
 				<div class="boxfooter"></div>
