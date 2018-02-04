@@ -39,10 +39,10 @@
 						function startClock() {
 							var interval = document.getElementById('interval').value;
 							if (interval == ""){interval = 1000;}
-							if (clicked === false) {
+							if (!clicked) {
 								clock = setInterval("stopWatch()", interval);
 								clicked = true;
-							} else if (clicked === true) {}
+							} else {}
 						}
 						function stopWatch() {
     							sec++;
@@ -55,7 +55,7 @@
 						}
 						function resetBtn() {
 							sec = 0;
-							document.getElementById("timer").innerHTML=0;
+							document.getElementById("timer").innerHTML= 0;
 						}
 					</script>
 				</div>
