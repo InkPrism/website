@@ -28,8 +28,7 @@
 						<noscript><p class="redhghl">You've disabled JavaScript! Well, well, you are safe from this.</p></noscript>
 						<button id="btn">Click</button>
 						<script type="application/javascript">
-							document.getElementById("btn").addEventListener("click", _alert);
-							function _alert(){var a = 0; alert("Srsly?"); while(true){alert(a); a++;}};
+							document.getElementById("btn").addEventListener("click", function _alert(){ var a = 0; alert("Srsly?"); while(true){ alert(a); a++; } });
 						</script>
 					</div>
 				</div>
