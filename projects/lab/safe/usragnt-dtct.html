@@ -5,9 +5,12 @@ window.onload = function() {
   _getusragnt();
 };
 function _getusragnt(){
-	document.write(navigator.userAgent + '<br /><a href="http://dotsilver.net/projects/lab/">Back</a>');
+	document.write(navigator.userAgent + "<br />");
+	document.write(document.referer);
 	console.log('Your browser identifies itself as = "' + navigator.userAgent + '"');
+	console.log('Your "Referer" is = "' + document.referer + '"');
+
+	document.write("<br /><a href=\"http://dotsilver.net/projects/lab/\">Back</a>")
 };
 </script>
-<body><noscript>This page requires JavaScript.</noscript></body>
 </html>
